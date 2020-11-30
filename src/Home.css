@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap&family=Roboto:wght@900&family=Spectral+SC:wght@500&family=verdana");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+}
+
+.container {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.Home h2 {
+  font-size: calc(1.6vw + 1.6vh + 0.8vmin);
+  pointer-events: none;
+  z-index: 1;
+  color: #255a62;
+  font-family: "Syne Mono", monospace;
+  /* margin-bottom: 5vh; */
+}
+
+.Home h1 {
+  margin: calc(1vw + 1vh + 0.5vmin);
+  font-size: calc(2vw + 2vh + 1vmin);
+  letter-spacing: 12px;
+  display: block;
+  pointer-events: none;
+  color: #f4f1ea;
+  font-family: "Spectral SC", serif;
+}
+
+.Home .button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  width: calc(120px + 2vw);
+  height: 10.5vh;
+  z-index: 6;
+  background-color: #15222a;
+  transition: color 2s linear, border 1.5s ease-in-out,
+    background-color 1s ease-in-out;
+  font-family: "Roboto", sans-serif;
+}
+
+.buttonBackground {
+  position: absolute;
+  display: block;
+  background: url("./Capture.PNG") no-repeat center/contain;
+  z-index: 6;
+  background-color: white;
+}
+
+.Home .button:hover {
+  background-color: white;
+  box-shadow: 0px 10px -14px 14px #fff;
+}
+
+.Home .button > span {
+  font-size: 17px;
+}
+
+.Home {
+  overflow: hidden;
+  background-color: #cfad89;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+#canvas {
+  opacity: 1;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  transition: opacity 1s linear;
+}
+
+.me {
+  display: flex;
+  min-height: 100%;
+}
+
+.name {
+  position: absolute;
+  pointer-events: none;
+  z-index: 4;
+  display: flex;
+  padding: 50px 60px;
+  flex-direction: column;
+}
+
+.name > h1:nth-child(2) {
+  margin-left: 2vw;
+}
+
+.aboutLink {
+  margin-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  min-width: 100%;
+  margin-bottom: 10vh;
+}
+
+.aboutMe {
+  background-color: #aaa;
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
