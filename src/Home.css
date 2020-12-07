@@ -42,8 +42,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
-  width: calc(120px + 2vw);
-  height: 10.5vh;
+  width: calc(20px + 10vw);
+  height: 10vh;
   z-index: 6;
   background-color: #15222a;
   transition: color 2s linear, border 1.5s ease-in-out,
@@ -127,3 +127,15 @@ body {
   height: 500px;
   position: relative;
 }
+
+@media (max-width: 960px) {
+  .Home .button {
+    width: calc(100px + 10vw);
+  }
+}
+
+/* @media (max-width: 600px) {
+  .Home .button {
+    width: calc(100px + 10vw);
+  }
+} */

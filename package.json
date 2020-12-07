@@ -1,4 +1,5 @@
 {
+  "homepage": "https://raedtayyem.github.io/portfolio-v1",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -12,6 +13,7 @@
     "jquery": "^3.5.1",
     "open-simplex-noise": "^2.4.0-pre4",
     "particlesjs": "^2.2.3",
+    "patch-package": "^6.2.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-native-viewport-units": "0.0.5",
@@ -22,6 +24,7 @@
     "stats": "^1.0.0",
     "stats.js": "^0.17.0",
     "three": "^0.121.1",
+    "typescript": "^4.1.2",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
@@ -30,12 +33,13 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postinstall": "patch-package"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
+    "extends": "react-app",
+    "ignorePatterns": [
+      "node_modules/"
     ]
   },
   "browserslist": {
@@ -49,5 +53,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }

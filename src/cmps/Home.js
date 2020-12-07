@@ -160,7 +160,6 @@ export default function Home() {
       }
     }
     (function () {
-      window.addEventListener("load", function () {
         canvas = new Canvas(true);
         canvas.init();
 
@@ -189,7 +188,6 @@ export default function Home() {
           },
           false
         );
-      });
     })();
   };
 
