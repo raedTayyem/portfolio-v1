@@ -251,5 +251,5 @@
 }
 
 .ContactMe:hover:after {
-  transform: rotateX(180deg);
+  transform: rotateX(181deg);
 }
