@@ -253,3 +253,55 @@
 .ContactMe:hover:after {
   transform: rotateX(181deg);
 }
+
+@media (max-width: 1200px) {
+  li{
+    font-size: 3vh;
+    line-height: calc(2.2vw + 2.2vh + 1.1vmin);
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 960px) {
+  .about {
+    height: 150vh;
+    flex-direction: column;
+  }
+
+  .aboutSectionContainer{
+    height: 75%;
+  }
+
+  .summary{
+    /* display: flex;
+    flex-direction: column;
+    align-items: end; */
+  } 
+
+  .aboutName{
+    transform: rotate(45deg);
+    font-size: calc(3vw + 3vh + 1.5vmin);
+  }
+
+  .ContactMe{
+    top: calc(75vh - (2.5vw + 2.5vh + 1.25vmin));
+    left: calc(50vw - (6vw + 6vh + 3vmin));
+    width: calc(12vw + 12vh + 6vmin);
+    height: calc(5vw + 5vh + 2.5vmin);
+    transform: rotate(0deg);
+  }
+
+  .ContactMe:before {
+    width: calc(12vw + 12vh + 6vmin);
+    height: calc(5vw + 5vh + 2.5vmin + 8vmin);
+    left: 0;
+    top: -4vmin;
+  }
+  
+  .ContactMe:after {
+    width: calc(12vw + 12vh + 6vmin + 8vmin);
+    height: calc(5vw + 5vh + 2.5vmin);
+    left: -4vmin;
+    top: 0;
+  }
+}

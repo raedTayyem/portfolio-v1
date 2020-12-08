@@ -192,9 +192,9 @@ export default function Home() {
   };
 
   useEffect(mount);
-
-  const scaleValue = 10.5;
-  const yValue = -(window.innerHeight * 2.1);
+  const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
+  const scaleValue = 10;
+  const yValue = -(vh * 2);
   //   console.log(scaleValue);
   const containerVariants = {
     hidden: {
