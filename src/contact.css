@@ -145,21 +145,24 @@ button:active {
   display: flex;
   align-items: center;
   text-align: center;
-  width: 160px;
+  height: 5vmax;
+  width: 18.5vmax;
   position: absolute;
   top: 4vh;
-  right: 0;
+  right: 2vw;
 }
 
 .description {
   margin-left: 1.25rem;
+  font-size: 2vmax;
+  margin-left: 0.4rem;
 }
 
 .theme-switch {
   display: inline-block;
-  height: 34px;
   position: relative;
-  width: 60px;
+  height: 3.8vmax;
+  width: 12vmax;
 }
 
 .theme-switch input {
@@ -179,10 +182,11 @@ button:active {
 
 .slider:before {
   background-color: #fff;
+  bottom: 0.4vmax;
   content: "";
-  width: 26px;
-  height: 26px;
-  left: 0.25rem;
+  width: 3vmax;
+  height: 3vmax;
+  left: 0.4vmax;
   position: absolute;
   transition: 0.4s;
 }
@@ -192,7 +196,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-  transform: translateX(26px);
+  transform: translateX(5vw);
 }
 
 .slider.round {
@@ -229,7 +233,7 @@ input:checked + .slider:before {
     font-size: 2vh;
   }
 
-  .right-col{
+  .right-col {
     height: 100%;
     width: 80vw;
     margin: auto;
@@ -239,7 +243,7 @@ input:checked + .slider:before {
     text-align: left;
   }
 
-  .left-col{
+  .left-col {
     width: 20vw;
   }
 
@@ -249,48 +253,26 @@ input:checked + .slider:before {
     justify-content: space-around;
     height: 80%; */
   }
-  
+
   input,
   textarea,
   button {
     font-size: 2vmax;
   }
-  .description {
-    font-size: 2vmax;
-    margin-left: 0.4rem;
-  }
+  
   button {
     width: 16vh;
     height: 6vh;
   }
-  .theme-switch-wrapper {
-    display: flex;
-    justify-content: space-around;
-    width: 20vmax;
-  }
-  .theme-switch {
-    height: 3.8vmax;
-    width: 12vmax;
-  }
-  
+
   .theme-switch input {
     display: none;
   }
-  
-  .slider:before {
-    background-color: #fff;
-    bottom: 0.4vmax;
-    content: "";
-    width: 3vmax;
-    height: 3vmax;
-    left: 0.4vmax;
-    position: absolute;
-    transition: 0.4s;
-  }
+
   input:checked + .slider:before {
     transform: translateX(5vmax);
   }
-  
+
   .slider.round {
     border-radius: 2vmax;
   }
@@ -318,10 +300,9 @@ input:checked + .slider:before {
     text-align: center;
   }
 
-  p{
+  p {
     width: 80%;
     margin-block-start: 2vh;
     margin-inline-start: 1vw;
   }
-
 }

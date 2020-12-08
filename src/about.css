@@ -60,7 +60,7 @@
 }
 
 .progress-bar {
-  height: calc(1vw + 1vh + 0.5vmin);
+  height: calc(1vmax + 1.5vmin);
   width: 100%;
   background-color: var(--pr-color);
   border-radius: 20px;
@@ -303,5 +303,13 @@
     height: calc(5vw + 5vh + 2.5vmin);
     left: -4vmin;
     top: 0;
+  }
+
+  .progress-bar {
+    height: calc(1.5vmax + 2vmin);
+  }
+
+  .aboutSectionContainer {
+    margin-top: 5%;
   }
 }

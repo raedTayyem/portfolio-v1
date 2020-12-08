@@ -127,7 +127,7 @@ export default function AboutMe() {
             <div className="skillWrap">
               <h3>Angular</h3>
               <div className="progress-bar">
-                <div className="bar" data-size="40">
+                <div className="bar" data-size="60">
                   <span className="perc"></span>
                 </div>
               </div>
@@ -135,7 +135,7 @@ export default function AboutMe() {
             <div className="skillWrap">
               <h3>Vue</h3>
               <div className="progress-bar">
-                <div className="bar" data-size="30">
+                <div className="bar" data-size="20">
                   <span className="perc"></span>
                 </div>
               </div>
