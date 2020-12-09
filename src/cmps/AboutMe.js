@@ -64,7 +64,7 @@ export default function AboutMe() {
               {/* <img src={profileImage} alt="" className="profileImage"/> */}
             </div>
             <ul className="info">
-              <li> A Full Stack / Frontend Web Developer,And a very</li>
+              <li>Full Stack / Frontend Web Developer,And a very</li>
               <li>curious individual who is always looking for his</li>
               <li>next challenge,With a passion for desgining and</li>
               <li>staying up to date with technology.</li>
