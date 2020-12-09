@@ -6,6 +6,13 @@ import { Link } from "react-router-dom";
 // import {vw, vh, vmin, vmax} from 'react-native-viewport-units';
 
 export default function Home() {
+  const appHeight = () => {
+    const doc = document.documentElement;
+    doc.style.setProperty("--app-height", `${window.innerHeight}px`);
+  };
+  window.addEventListener("resize", appHeight);
+  appHeight();
+
   const mount = () => {
     class Tool {
       // random number.
@@ -160,39 +167,42 @@ export default function Home() {
       }
     }
     (function () {
-        canvas = new Canvas(true);
-        canvas.init();
+      canvas = new Canvas(true);
+      canvas.init();
 
-        function render() {
-          window.requestAnimationFrame(function () {
-            canvas.render();
-            render();
-          });
-        }
+      function render() {
+        window.requestAnimationFrame(function () {
+          canvas.render();
+          render();
+        });
+      }
 
-        render();
+      render();
 
-        // event
-        window.addEventListener(
-          "resize",
-          function () {
-            canvas.resize();
-          },
-          false
-        );
+      // event
+      window.addEventListener(
+        "resize",
+        function () {
+          canvas.resize();
+        },
+        false
+      );
 
-        window.addEventListener(
-          "mousemove",
-          function (e) {
-            canvas.mouseY = e.clientY;
-          },
-          false
-        );
+      window.addEventListener(
+        "mousemove",
+        function (e) {
+          canvas.mouseY = e.clientY;
+        },
+        false
+      );
     })();
   };
 
   useEffect(mount);
-  const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
+  const vh = Math.max(
+    document.documentElement.clientHeight || 0,
+    window.innerHeight || 0
+  );
   const scaleValue = 10;
   const yValue = -(vh * 2);
   //   console.log(scaleValue);

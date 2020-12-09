@@ -73,7 +73,7 @@ body {
   background-color: #cfad89;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 100vh;
 }
 
 .main {
@@ -86,7 +86,7 @@ body {
   opacity: 1;
   position: absolute;
   left: 0;
-  top: 0;
+  bottom: 0;
   overflow: hidden;
   transition: opacity 1s linear;
 }
@@ -146,16 +146,10 @@ body {
     background-color: rgba(255, 255, 255, 0.118);
   }
 
-  body, html {
-    width: 100vw;
-    min-width: 100vw;
-    max-width: 100vw;
-    min-height: calc(100vh - calc(100vh - 100%));
-    max-height: calc(100vh - calc(100vh - 100%));
-    min-height: -webkit-fill-available;
-    overflow-x: hidden;
-    overflow-y: hidden;
-   }
+  html {
+    overflow: hidden;
+    height: -webkit-fill-available;
+  }
 }
 
 /* @media (max-width: 600px) {
