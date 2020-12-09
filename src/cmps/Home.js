@@ -204,13 +204,13 @@ export default function Home() {
     visible: {
       x: 0,
       opacity: 1,
-      transition: { duration: 1.5 },
+      transition: { duration: 0.7 },
     },
     exit: {
       y: yValue,
       scale: scaleValue,
       opacity: 0.4,
-      transition: { duration: 2.9 },
+      transition: { duration: 1.4 },
     },
   };
 

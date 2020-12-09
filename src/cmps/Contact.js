@@ -49,13 +49,13 @@ export default function Contact() {
       opacity: 1,
       x: 0,
       scale: 1,
-      transition: { duration: 1.5 },
+      transition: { duration: 0.7 },
     },
     exit: {
       opacity: 0,
       // x: "100vw",
       scale: 1.2,
-      transition: { duration: 3 },
+      transition: { duration: 2 },
     },
   };
 

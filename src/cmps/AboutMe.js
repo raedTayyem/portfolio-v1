@@ -27,7 +27,7 @@ export default function AboutMe() {
     });
   }
 
-  setTimeout(loading, 3400);
+  setTimeout(loading, 1800);
 
   const aboutVariants = {
     hidden: {
@@ -35,11 +35,11 @@ export default function AboutMe() {
     },
     visible: {
       opacity: 1,
-      transition: { duration: 4 },
+      transition: { duration: 2 },
     },
     exit: {
       x: "-100vw",
-      transition: { duration: 1.5 },
+      transition: { duration: 0.7 },
     },
   };
 
