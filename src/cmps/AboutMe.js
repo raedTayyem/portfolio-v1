@@ -135,7 +135,7 @@ export default function AboutMe() {
             <div className="skillWrap">
               <h3>Vue</h3>
               <div className="progress-bar">
-                <div className="bar" data-size="50">
+                <div className="bar" data-size="55">
                   <span className="perc"></span>
                 </div>
               </div>
