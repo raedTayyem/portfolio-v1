@@ -262,9 +262,9 @@
   }  
   body,
   html {
-    height: calc(160vh - calc(160vh - 160%));
+    height: 160vh;
     height: -webkit-fill-available;
-    overflow: auto;
+    overflow: scroll;
   }
 }
 
