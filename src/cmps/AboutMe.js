@@ -87,7 +87,7 @@ export default function AboutMe() {
             <div className="skillWrap">
               <h3>Html5</h3>
               <div className="progress-bar">
-                <div className="bar" data-size="90">
+                <div className="bar" data-size="95">
                   <span className="perc"></span>
                 </div>
               </div>
@@ -95,7 +95,7 @@ export default function AboutMe() {
             <div className="skillWrap">
               <h3>Css3</h3>
               <div className="progress-bar">
-                <div className="bar" data-size="75">
+                <div className="bar" data-size="90">
                   <span className="perc"></span>
                 </div>
               </div>
@@ -103,7 +103,7 @@ export default function AboutMe() {
             <div className="skillWrap">
               <h3>Sass</h3>
               <div className="progress-bar">
-                <div className="bar" data-size="65">
+                <div className="bar" data-size="85">
                   <span className="perc"></span>
                 </div>
               </div>
@@ -111,7 +111,7 @@ export default function AboutMe() {
             <div className="skillWrap">
               <h3>JavaScript (ES6)</h3>
               <div className="progress-bar">
-                <div className="bar" data-size="60">
+                <div className="bar" data-size="90">
                   <span className="perc"></span>
                 </div>
               </div>
@@ -119,7 +119,7 @@ export default function AboutMe() {
             <div className="skillWrap">
               <h3>React.js</h3>
               <div className="progress-bar">
-                <div className="bar" data-size="65">
+                <div className="bar" data-size="85">
                   <span className="perc"></span>
                 </div>
               </div>
@@ -127,7 +127,7 @@ export default function AboutMe() {
             <div className="skillWrap">
               <h3>Angular</h3>
               <div className="progress-bar">
-                <div className="bar" data-size="60">
+                <div className="bar" data-size="80">
                   <span className="perc"></span>
                 </div>
               </div>
@@ -135,7 +135,7 @@ export default function AboutMe() {
             <div className="skillWrap">
               <h3>Vue</h3>
               <div className="progress-bar">
-                <div className="bar" data-size="20">
+                <div className="bar" data-size="50">
                   <span className="perc"></span>
                 </div>
               </div>
@@ -143,7 +143,7 @@ export default function AboutMe() {
             <div className="skillWrap">
               <h3>MongoDB</h3>
               <div className="progress-bar">
-                <div className="bar" data-size="70">
+                <div className="bar" data-size="85">
                   <span className="perc"></span>
                 </div>
               </div>
