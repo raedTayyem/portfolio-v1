@@ -262,7 +262,8 @@
   }  
   body,
   html {
-    height: 160vh;
+    height: calc(160vh - calc(160vh - 160%));
+    height: -webkit-fill-available;
   }
 }
 
