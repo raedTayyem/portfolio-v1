@@ -86,7 +86,7 @@ body {
   opacity: 1;
   position: absolute;
   left: 0;
-  bottom: 0;
+  top: 0;
   overflow: hidden;
   transition: opacity 1s linear;
 }
